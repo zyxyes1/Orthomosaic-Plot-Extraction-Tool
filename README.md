@@ -1,9 +1,9 @@
-##Orthomosaic Plot Extraction Tool (OPET)
+#Orthomosaic Plot Extraction Tool (OPET)
 
 Extract plot‑level pseudo‑RGB patches from georeferenced orthomosaic TIFFs using GPS corner coordinates.
 
 
-📖 Introduction
+📖 #Introduction
 
 
 In UAV‑based agricultural research, orthomosaics (stitched images) are widely used as a base for extracting plot‑level data. However, annotating hundreds of plots directly on raw aerial images is impractical. Orthomosaics provide a single, standardised top‑down view that makes manual plot annotation feasible.
@@ -25,7 +25,7 @@ This enables researchers to:
 The output patches serve as reference images for subsequent analysis, such as comparison with raw aerial imagery or further machine‑learning pipelines.
 
 
-🚀 Features
+🚀 #Features
 
 
     GeoTIFF support – reads and preserves geographic reference (projection & geo‑transform) using GDAL.
@@ -41,7 +41,7 @@ The output patches serve as reference images for subsequent analysis, such as co
 
 
 
-📦 Dependencies
+📦 #Dependencies
 
 
     Python 3.7+
@@ -66,7 +66,7 @@ pip install numpy PyQt5 gdal scikit-image scipy
     Note: Installing GDAL can be tricky on some systems. We recommend using conda (conda install gdal) or following the official GDAL installation guide.
     
 
-🖥️ Usage
+🖥️ #Usage
 
 
 1. Launch the application
@@ -107,7 +107,7 @@ python a109-orthomosaic-plot-extraction-tool.py
     Reset View – return to the initial zoom level.
    
 
-📂 Input File Formats
+📂 #Input File Formats
 
 
 TXT mask file (corner file)
@@ -142,7 +142,7 @@ GeoTIFF requirements
     For single‑band images, a grayscale colormap is used for display; for multi‑band (≥3), the first three bands are shown as RGB.
     
 
-📤 Output
+📤 #Output
 
 
     Each cropped plot is saved as a GeoTIFF with the same projection and pixel type as the source.
@@ -154,7 +154,7 @@ GeoTIFF requirements
     All outputs for a given TIFF are stored in a sub‑folder named after the TIFF file inside your chosen result folder.
     
 
-🧪 Example Workflow
+🧪 #Example Workflow
 
 
     Annotate your field plots on the orthomosaic using a polygon‑drawing tool (e.g., our companion Community Annotation Software) and save the corner file (plots.txt).
@@ -170,7 +170,7 @@ GeoTIFF requirements
     These plot images are now ready for further analysis (e.g., vegetation index calculation, deep learning classification, or comparison with raw aerial data).
     
 
-📜 Citation
+📜 #Citation
 
 
 If you use OPET in your research, please cite this software as:
@@ -178,13 +178,13 @@ If you use OPET in your research, please cite this software as:
     Orthomosaic Plot Extraction Tool (OPET) – https://github.com/zyxyes1/Orthomosaic-Plot-Extraction-Tool
     
 
-🤝 Contributing
+🤝 #Contributing
 
 
 We welcome issues, feature requests, and pull requests. Please open an issue first to discuss major changes.
 
 
-📧 Contact
+📧 #Contact
 
 
 For questions or collaboration, please contact the authors via the GitHub repository.
